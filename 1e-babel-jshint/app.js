@@ -3,6 +3,6 @@ console.log('logging from the main 04 app.js file...');
 
 
 // loads in the page.js file
-require('./page');
+require('./login');
 
 

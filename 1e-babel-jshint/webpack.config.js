@@ -1,5 +1,5 @@
 module.exports = {
-    entry: ["./main", "./app"], // can be an array or a string
+    entry: ["./utils", "./app"], // can be an array or a string
 	output: {
         // path: __dirname,
 		filename: "bundle.js"
