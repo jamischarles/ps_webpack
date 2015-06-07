@@ -1,11 +1,8 @@
 {
-  "name": "1e-babel-jshint",
+  "name": "2a-source-maps",
   "version": "1.0.0",
-  "description": "Webpack demo to show npm start",
+  "description": "Webpack demo to show source maps",
   "main": "main.js",
-  "scripts": {
-    "start": "BUILD_DEV=1 webpack-dev-server"
-  },
   "author": "Jamis Charles",
   "license": "ISC",
   "devDependencies": {
