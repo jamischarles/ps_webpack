@@ -25,5 +25,3 @@ $ webpack-dev-server
 # FIXME: These instructions need to be simplified. There's basically two options. Iframe or not. Do we ever want to
 not have hot loading? It's really easy to enable.
 
-# TODO:
-- explore differences between --hot and --inline. They seem to be similar.
