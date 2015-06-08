@@ -7,21 +7,20 @@ $ npm install -g webpack-dev-server
 $ webpack-dev-server
 
 
+# HOTLOADING:
+# Open http://localhost:8080/webpack-dev-server/ and make a change to witness hotloading
+
+
+# DISABLE HOTLOADING:
+# Open http://localhost:8080/ if you don't want to use hotloading
 
 
 
-# Option 1) - Inline hotloading via websockets (no iframe)
+# If you don't like the status bar, but still want hotloading, use this:
 $ webpack-dev-server --inline
 # now open http://localhost:8080/
 
-# Option 2) Hotloading with indication (adds the status bar)
-$ webpack-dev-server
-# Open http://localhost:8080/webpack-dev-server/ for hotloading
-# Open http://localhost:8080/ for non-hotloading
 
 
 
-
-# FIXME: These instructions need to be simplified. There's basically two options. Iframe or not. Do we ever want to
-not have hot loading? It's really easy to enable.
 

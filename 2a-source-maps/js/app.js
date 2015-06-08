@@ -1,5 +1,5 @@
 // This file is for my app only
-console.log('logging from the main 04 app.js file...');
+console.log('App started...');
 
 
 // loads in the page.js file

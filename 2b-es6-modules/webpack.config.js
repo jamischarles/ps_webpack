@@ -1,20 +1,25 @@
+var path = require('path');
+
 module.exports = {
+	// set the base directory for 'entry' prop below. Also, require() will start at this base folder
+	context: path.resolve('js'), // set at '/js' relative to the project root
+
     entry: ["./utils", "./app"], // can be an array or a string
 	output: {
-        // path: __dirname,
+		// where the bundle actually lives
+		path: path.resolve('build/js/'), // save the generated files in /build/js/ on the server
+		// where the bundle will be served up from on the server
+		publicPath: '/public/assets/js/', // serve that file up at /assets/ on the server
 		filename: "bundle.js"
 	},
+
+	devServer: {
+		// load index.html from /public
+		contentBase: 'public'
+	},
+
 	// Loaders apply transformations before a file is added to bundle.js
 	module: {
-		preLoaders: [
-			// JSHINT preLoader. Runs before the loaders
-			{
-				test: /\.js$/, // include .js files
-				exclude: /node_modules/, // exclude node_modules
-				loader: "jshint-loader"
-			}
-		],
-
 		loaders: [
 			// Babel loader. Transforms .es6 file from es6->es5 before it's added to bundle.js
 			{
@@ -23,12 +28,6 @@ module.exports = {
 				loader: "babel-loader"
 			}
 		]
-	},
-
-
-	// Optional object that allows rules in addition to .jshintrc
-	jshint: {
-		"unused": true
 	},
 
 	resolve: {

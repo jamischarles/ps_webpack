@@ -1,6 +1,10 @@
+var path = require('path');
 
 module.exports = {
-    entry: ["./main", "./app"], // can be an array or a string
+	// set the base directory for 'entry' prop below. Also, require() will start at this base folder
+	context: path.resolve('js'),
+
+	entry: ["./utils", "./app"], // can be an array or a string
 	output: {
         // path: __dirname,
 		filename: "bundle.js"
@@ -22,6 +26,7 @@ module.exports = {
 		// overrides the default arrray, so we have to include .js files - http://webpack.github.io/docs/configuration.html#resolve-extensions
 		extensions: ['', '.js', '.es6']
 	}
+
 };
 
 
