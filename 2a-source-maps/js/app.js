@@ -1,8 +1,8 @@
 // This file is for my app only
-console.log('App started...');
+console.log('App loaded');
 
 
-// loads in the page.js file
+// loads the login.es6 file
 require('./login');
 
 

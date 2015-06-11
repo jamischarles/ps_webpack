@@ -1,7 +1,7 @@
 {
-  "name": "1e-babel-jshint",
+  "name": "1g-prod-dev",
   "version": "1.0.0",
-  "description": "Webpack demo to show npm start",
+  "description": "Webpack demo to show prod vs dev",
   "main": "main.js",
   "scripts": {
     "start": "BUILD_DEV=1 webpack-dev-server"

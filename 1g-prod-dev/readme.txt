@@ -1,47 +1,48 @@
 This demo shows how to use webpack in dev and prod modes...
 
-
-It shows 3 features:
-1) Create a minified bundle.js that is run through uglify.js
-2) Feature flags. Won't execute blocks that are wrapped in 'if (__DEV__)' in prod mode. If flag=false, will be removed with webpack -p flag.
-3) Remove console.log() and other undesirables in prod mode
-
-
 Pre-reqs:
 1) have a package.json
 2) $ npm install babel-loader --save-dev
-3) $ npm install --save-dev strip-loader
+3) $ npm install strip-loader --save-dev
 4) $ npm install
 
 strip-loader is a loader that allows us to remove certain code (like console.log).
 
 
-# Generate a bundle ready for prod (minified via uglify)
+
+
+It shows 4 features:
+1) Generate a bundle ready for prod (minified via uglify)
 $ webpack -p
 
-# Start the dev server in prod mode (rare that you'll need this)
-$ webpack-dev-server -p
-
-
-# FIXME: Any point in having this in here...?
-# generate bundle in continuous watch mode
-$ webpack --watch
-
+2) Feature flags. Won't execute blocks that are wrapped in 'if (__DEV__)' in prod mode (you have to turn on prod mode).
+If flag=false, will be removed with webpack -p flag.
 
 # if (__DEV__) {
 #   console.warn('Extra logging');
 # }
 
-
-# includes the above
+# Turns on dev mode
 $ BUILD_DEV=1 webpack-dev-server
+$ BUILD_DEV=1 webpack
 
-# removes __DEV__ code
+# Turns on prod mode, and removes __DEV__ code (see dev config file)
 $ BUILD_DEV=0 webpack-dev-server
+$ BUILD_DEV=0 webpack
+
+3) Dev vs Prod config files (combine with -p flag to minify)
+$ webpack-dev-server --config webpack-production.config.js
+$ webpack --config webpack-production.config.js
+
+compare to normal
+$ webpack-dev-server
+
+4) Remove console.log() and other undesirables in prod mode (defined in prod config file)
+See strip-loader in the production config
 
 
 
-# TODO:
-1) Try to tie it to node_env
-2) Try to strip out console.logs
 
+
+# You can start the dev server in prod mode (rare that you'll need this)
+$ webpack-dev-server -p

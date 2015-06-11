@@ -9,6 +9,10 @@ module.exports = {
         // path: __dirname,
 		filename: "bundle.js"
 	},
+
+	// turn on source maps
+	devtool: 'eval-source-map',
+
 	// Loaders apply transformations before a file is added to bundle.js
 	module: {
 		loaders: [

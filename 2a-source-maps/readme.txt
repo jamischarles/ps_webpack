@@ -13,3 +13,10 @@ $ webpack -d
 # start dev server in prod mode (-p) AND with source map support (-d)
 # compare network vs the source tab in devtools
 $ webpack-dev-server -p -d
+
+
+
+If you want to add sourcemaps via config, you can add this line:
+devtool: 'cheap-module-eval-source-map',
+
+http://webpack.github.io/docs/configuration.html#devtool

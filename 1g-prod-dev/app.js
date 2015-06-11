@@ -1,8 +1,21 @@
+var debug = require('./utils').debug;
+
 // This file is for my app only
-console.log('logging from the main 05 app.js file...');
+console.log('App loaded');
 
 
-// loads in the page.js file
-require('./page');
+// this will be stripped out in prod mode
+if (__DEV__) {
+	console.warn('WE ARE IN DEV MODE');
+}
+
+// this will be stripped out in prod mode
+debug('makeFoo called');
+
+
+
+// loads the login.es6 file
+require('./login');
+
 
 

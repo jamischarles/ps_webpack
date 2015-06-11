@@ -1,4 +1,4 @@
-console.log('Home page JS loaded');
+console.log('App loaded');
 
 // load bootstrap since it's a global dep
 require("../css/bootstrap.css");

@@ -1,7 +1,6 @@
 // This is global JS provided to all apps.
-document.write("It works.");
+document.write("2b-es6-modules works");
 
-console.log('App loaded');
 
 
 var unusedVariable;

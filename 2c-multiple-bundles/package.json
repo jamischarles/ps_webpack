@@ -1,7 +1,7 @@
 {
-  "name": "2b-es6-modules",
+  "name": "2c-multiple-bundles",
   "version": "1.0.0",
-  "description": "Webpack demo to show babel",
+  "description": "Webpack demo to multiple entry points",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
