@@ -37,7 +37,7 @@ module.exports = {
 			{
 				test: /\.less$/,
 				exclude: /node_modules/,
-				// first apply sass loader, then css, then style loader
+				// first apply less loader, then css, then style loader
 				loader: "style!css!less"
 			}
 		]
