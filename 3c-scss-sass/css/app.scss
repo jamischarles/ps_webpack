@@ -1,0 +1,19 @@
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    /* background-image: linear-gradient(to bottom,#005C0C 0,#005C0C 100%); */
+}
+
+// Some SCSS features
+h1 {
+    padding: 15px;
+
+    border: {
+        color: red;
+        style: solid;
+        width: 1px;
+    }
+}
+
