@@ -1,0 +1,27 @@
+@blue: #5B83AD;
+
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    /* background-image: linear-gradient(to bottom,#005C0C 0,#005C0C 100%); */
+}
+
+// Some less features
+h1 {
+	// less variable
+    border: 3px solid @blue;
+    padding: 15px;
+
+	// Props that will have to be auto-prefixed
+	background: linear-gradient(to top, black, white);
+	display: flex;
+	transition: transform 1s;
+
+	-webkit-border-radius: 5px;
+	border-radius: 5px
+}
+
+
