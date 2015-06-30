@@ -1,0 +1,19 @@
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    /* background-image: linear-gradient(to bottom,#005C0C 0,#005C0C 100%); */
+}
+
+.bg_header_img {
+    /* This will be inlined as a data-uri via the url-loader */
+    background: url('../images/webpack_logo.png') -131px 1px no-repeat;
+    margin-right: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+h3 {
+    font-size: 18px;
+}
