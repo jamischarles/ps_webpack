@@ -1,0 +1,7 @@
+{
+    // look ma, awesome comments
+    // JSON normally explodes with comments and breaks require() and JSON.parse()
+    "app_loaded_msg": "App and this message loaded from config/config.json",
+    "main_config_name": "arstrs",
+    "secondary_config_name": "arstrs"
+}
