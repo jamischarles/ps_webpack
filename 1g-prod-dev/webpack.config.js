@@ -5,6 +5,7 @@ var webpack = require('webpack');
 
 // This defines __DEV__ as a global variable which can be used in the files
 // definePlugin takes raw strings and inserts them, so you can put strings of JS if you want.
+// http://webpack.github.io/docs/list-of-plugins.html#defineplugin
 var definePlugin = new webpack.DefinePlugin({
 	// we are setting proccess.env.BUILD_ENV to 'false' in the prod config file
 	__DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')), // default to true

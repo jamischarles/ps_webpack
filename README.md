@@ -1,11 +1,11 @@
 # wp-demos
-Helpful links
+## Helpful links
 
-Webpack getting started guide:
+### Webpack getting started guide:
 https://github.com/petehunt/webpack-howto
 
-Official Webpack docs
+### Official Webpack docs
 http://webpack.github.io/docs/
 
-List of webpack loaders:
+### List of webpack loaders:
 http://webpack.github.io/docs/list-of-loaders.html
